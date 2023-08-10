@@ -1,46 +1,78 @@
-# Getting Started with Create React App
+Sure, here's a sample `README.md` file that you can use for your React app:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```markdown
+# Employee Management App
 
-## Available Scripts
+This is a simple Employee Management web application built using React. It allows you to view and manage employee information.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- View a list of employees along with their basic information.
+- Click on an employee's name to view detailed information.
+- Add new employees to the system.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installation
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Clone the repository to your local machine:
+```
 
-### `npm test`
+git clone https://github.com/JSebasIzquierdo/payroll-software
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
 
-### `npm run build`
+2. Navigate to the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+cd employee-management-app
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
 
-### `npm run eject`
+3. Install the dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+4. Start the development server:
 
-## Learn More
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+
+5. Open your browser and navigate to `http://localhost:3000` to access the app.
+
+## Usage
+
+### EmployeeView Component
+
+The `EmployeeView` component displays a list of employees along with basic information.
+
+### EmployeeDetail Component
+
+The `EmployeeDetail` component provides detailed information about a specific employee.
+
+### AddEmployeeModal Component
+
+The `AddEmployeeModal` component allows you to add new employees to the system.
+
+## API Integration
+
+The app fetches employee data from an external API. Make sure you have a stable internet connection for proper functionality.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions, feel free to open a pull request or create an issue.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+This project was developed by [Juan Sebastián Izquierdo Henao](https://github.com/JSebasIzquierdo).
+```
