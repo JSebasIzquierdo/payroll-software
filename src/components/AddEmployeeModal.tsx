@@ -47,22 +47,21 @@ const AddEmployeeModal = ({ isOpen, onClose }: AddEmployeeModalProps) => {
   };
 
   const validateCity = (city: string) => {
-    // You can implement city validation logic here
-    return true; // Placeholder validation
+    return true;
   };
 
   const validateTelephone = (telephone: string) => {
-    const pattern = /^[0-9]{10}$/; // Validating a 10-digit number, you can adjust the pattern as needed
+    const pattern = /^[0-9]{10}$/;
     return pattern.test(telephone);
   };
 
   const validateSalary = (salary: string) => {
-    const pattern = /^\d+(\.\d{1,2})?$/; // Validating a positive number with up to 2 decimal places
+    const pattern = /^\d+(\.\d{1,2})?$/;
     return pattern.test(salary);
   };
 
   const validateTimeInPosition = (time: string) => {
-    const pattern = /^[0-9]+$/; // Validating a positive integer
+    const pattern = /^[0-9]+$/;
     return pattern.test(time);
   };
 
@@ -125,7 +124,6 @@ const AddEmployeeModal = ({ isOpen, onClose }: AddEmployeeModalProps) => {
         <div className="modal-content">
           <h2 className="text-xl font-bold mb-4">Add Employee</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {/* Employee Section */}
             <div className="mb-4">
               <label
                 className="block text-gray-700 font-bold mb-2"
@@ -147,8 +145,6 @@ const AddEmployeeModal = ({ isOpen, onClose }: AddEmployeeModalProps) => {
               )}
             </div>
 
-            {/* Add Middle Name and Last Name fields here */}
-            {/* Location City */}
             <div className="mb-4">
               <label
                 className="block text-gray-700 font-bold mb-2"
@@ -172,7 +168,6 @@ const AddEmployeeModal = ({ isOpen, onClose }: AddEmployeeModalProps) => {
               )}
             </div>
 
-            {/* Add Address field here */}
             <div className="mb-4">
               <label
                 className="block text-gray-700 font-bold mb-2"
@@ -194,7 +189,6 @@ const AddEmployeeModal = ({ isOpen, onClose }: AddEmployeeModalProps) => {
               )}
             </div>
 
-            {/* Date Birth */}
             <div className="mb-4">
               <label
                 className="block text-gray-700 font-bold mb-2"
@@ -216,7 +210,6 @@ const AddEmployeeModal = ({ isOpen, onClose }: AddEmployeeModalProps) => {
               )}
             </div>
 
-            {/* Telephone */}
             <div className="mb-4">
               <label
                 className="block text-gray-700 font-bold mb-2"
@@ -238,7 +231,6 @@ const AddEmployeeModal = ({ isOpen, onClose }: AddEmployeeModalProps) => {
               )}
             </div>
 
-            {/* Position Section */}
             <div className="mb-4">
               <label
                 className="block text-gray-700 font-bold mb-2"
@@ -262,7 +254,6 @@ const AddEmployeeModal = ({ isOpen, onClose }: AddEmployeeModalProps) => {
               )}
             </div>
 
-            {/* Hire Date */}
             <div className="mb-4">
               <label
                 className="block text-gray-700 font-bold mb-2"
@@ -284,7 +275,6 @@ const AddEmployeeModal = ({ isOpen, onClose }: AddEmployeeModalProps) => {
               )}
             </div>
 
-            {/* Email */}
             <div className="mb-4">
               <label
                 className="block text-gray-700 font-bold mb-2"
@@ -306,7 +296,6 @@ const AddEmployeeModal = ({ isOpen, onClose }: AddEmployeeModalProps) => {
               )}
             </div>
 
-            {/* Salary */}
             <div className="mb-4">
               <label
                 className="block text-gray-700 font-bold mb-2"
@@ -328,7 +317,6 @@ const AddEmployeeModal = ({ isOpen, onClose }: AddEmployeeModalProps) => {
               )}
             </div>
 
-            {/* Time in Position */}
             <div className="mb-4">
               <label
                 className="block text-gray-700 font-bold mb-2"
